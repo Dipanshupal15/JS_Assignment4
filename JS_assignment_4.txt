@@ -1,0 +1,144 @@
+Que 1- Create the Example for Logical Operators.
+Ans 1- Certainly! In JavaScript, logical operators are used to perform logical operations on Boolean values. Here's an example demonstrating
+       the logical operators '&&' (logical AND), '||' (logical OR), and '!' (logical NOT):
+
+       // Logical AND (&&) Example
+       let isSunny = true;
+       let isWarm = true;
+
+       if (isSunny && isWarm) {
+        console.log("It's a sunny and warm day! Perfect weather!");
+       } else {
+        console.log("Either it's not sunny or not warm, or both.");
+       }
+
+       // Logical OR (||) Example
+       let isRaining = false;
+       let isSnowing = true;
+
+       if (isRaining || isSnowing) {
+        console.log("It's either raining or snowing. Stay indoors!");
+       } else {
+        console.log("It's not raining and not snowing. Enjoy the weather!");
+       }
+
+       // Logical NOT (!) Example
+       let hasSubscription = false;
+
+       if (!hasSubscription) {
+        console.log("You don't have a subscription. Please subscribe to access the content.");
+       } else {
+        console.log("You have an active subscription. Enjoy the content!");
+       }
+
+Que 2- Difference between “ == “ and “ === “ operators.
+Ans 2- In JavaScript, both '==' (equality) and '===' (strict equality) are comparison operators, but they behave differently.
+
+       Equality Operator (==):
+
+       The == operator compares two values for equality after performing type coercion if necessary.
+       Type coercion is the process of converting one type to another during a comparison. For example, if you compare a string and a number
+       using ==, JavaScript will attempt to convert one or both operands to a common type before making the comparison.
+
+       Strict Equality Operator (===):
+
+       The === operator, also known as the strict equality operator, compares two values for equality without performing type coercion.
+       If the types of the operands are different, the comparison will return false without attempting to convert them.
+       It checks both value and type.
+
+Que 3- How many operators do we have in JS ?
+Ans 3- JavaScript has a variety of operators that can be categorized into different types. Here's a general overview:
+
+       Arithmetic Operators:
+
+       Addition ('+')
+       Subtraction ('-')
+       Multiplication ('*')
+       Division ('/')
+       Remainder/Modulus ('%')
+       Increment ('++')
+       Decrement ('--')
+
+       Assignment Operators:
+
+       Assignment ('=')
+       Addition assignment ('+=')
+       Subtraction assignment ('-=')
+       Multiplication assignment ('*=')
+       Division assignment ('/=')
+       Remainder assignment ('%=')
+
+       Comparison Operators:
+
+       Equal to ('==')
+       Strict equal to ('===')
+       Not equal to ('!=')
+       Strict not equal to ('!==')
+       Greater than ('>')
+       Less than ('<')
+       Greater than or equal to ('>=')
+       Less than or equal to ('<=')
+
+       Logical Operators:
+
+       Logical AND ('&&')
+       Logical OR ('||')
+       Logical NOT ('!')
+
+       Bitwise Operators:
+
+       Bitwise AND ('&')
+       Bitwise OR ('|')
+       Bitwise XOR ('^')
+       Bitwise NOT ('~')
+       Left shift ('<<')
+       Right shift ('>>')
+       Unsigned right shift ('>>>')
+
+       Unary Operators:
+
+       Unary plus ('+')
+       Unary minus ('-')
+       Logical NOT ('!')
+       Bitwise NOT ('~')
+       Typeof (typeof)
+       Void (void)
+       Delete (delete)
+
+       Ternary (Conditional) Operator:
+       Ternary Operator ('? :')
+
+       Miscellaneous Operators:
+       Comma Operator (','): Evaluates multiple expressions and returns the result of the last one.
+
+       Object Property Access:
+       Dot notation ('.')
+       Bracket notation ('[]')
+
+Que 4- What is use of parseInt in js ?
+Ans 4- The 'parseInt' function in JavaScript is used to parse a string and convert it into an integer (a whole number). It takes two parameters: the
+       string to be converted and an optional parameter called the "radix" that specifies the base of the numeral system (from 2 to 36).
+
+Que 5- Take input from user and find the odd and even number.
+Ans 5- To take input from the user and determine whether the entered number is odd or even in JavaScript, you can use the prompt function to
+       get input and then check the remainder when dividing the input by 2. If the remainder is 0, the number is even; otherwise, it's odd. 
+
+       // Take input from the user
+       let userInput = prompt("Enter a number:");
+
+       // Convert the user input to a number
+       let userNumber = parseInt(userInput);
+
+       // Check if the number is NaN (Not a Number)
+       if (isNaN(userNumber)) {
+         console.log("Invalid input. Please enter a valid number.");
+       } else {
+         // Check if the number is odd or even
+         if (userNumber % 2 === 0) {
+           console.log(userNumber + " is an even number.");
+         } else {
+           console.log(userNumber + " is an odd number.");
+         }
+       }
+
+
